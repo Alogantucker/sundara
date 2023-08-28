@@ -98,6 +98,9 @@ body {
     background-color:  #00416B  ;
     color: white;
     padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure the nav-bar is on top of other content */
 }
 .nav-bar a {
     text-decoration: none;
@@ -145,6 +148,64 @@ p {
     color: gray;
 }
 
+.main-content {
+    margin-bottom: 50px; /* Add space between main content and newsletter */
+}
+
+.newsletter-section {
+    display: flex; /* Display flex allows the newsletter content to be centered */
+    flex-direction: column; /* Ensure the newsletter content is stacked vertically */
+    align-items: center;
+    /* background-color: #FFD700;  Yellow background color */
+    padding: 20px; /* Padding allows the background color to extend beyond the content */
+    border-radius: 10px; /* Border-radius rounds the edges of the element */
+    text-align: center;
+    margin-top: -200px; /* Add space between main content and newsletter */
+    position: relative; /* Add this line to make positioning easier */
+    margin-bottom: 50px; /* Add space between newsletter and footer */
+}
+
+.newsletter-box {
+    background-color: #00406bf1; /* NAVY background color */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 70%; /* Adjust this value to control the width of the box */
+    margin: 0 auto; /* Center the box horizontally */
+    position: relative; /* Add this line to position the box */
+    top: -75px; /* Adjust this value to align with the yellow background line */
+}
+
+
+
+
+.newsletter-box p {
+    margin: 0 0 10px; /* margin: top right bottom left */
+    font-size: 18px;
+    color: white;
+}
+
+.newsletter-box form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-box input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter-box button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CC7E9D; /* Blue background color */
+    color: white;
+    cursor: pointer;
+}
 .footer-section {
     display: flex;
     flex-direction: column;
@@ -153,4 +214,7 @@ p {
     background-color:  #00416B  ;
     color: white;
     padding: 10px 0;
+    position: sticky;
+    bottom: 0;
 }
+
