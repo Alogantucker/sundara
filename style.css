@@ -1,0 +1,156 @@
+
+/* LULO CLEAN OUTLINE BOLD Font */
+@font-face {
+    font-family: 'Lulo Clean Outline';
+    src: url(fonts/LuloCleanOutline-Bold.woff) format('woff'),
+         url(fonts/LuloCleanOutline-Bold.woff2) format('woff2'),
+         url(fonts/LuloCleanOutline-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/* PROXIMA NOVA MEDIUM Font */
+@font-face {
+    font-family: 'Proxima Nova Medium';
+    src: url(fonts/ProximaNova-Medium.woff) format('woff'),
+         url(fonts/ProximaNova-Medium.woff2) format('woff2'),
+         url(fonts/ProximaNova-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+/* PROXIMA NOVA REGULAR Font */
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url(fonts/ProximaNova-Regular.woff) format('woff'),
+         url(fonts/ProximaNova-Regular.woff2) format('woff2'),
+         url(fonts/ProximaNova-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* PROXIMA NOVA EXTRA BOLD Font */
+@font-face {
+    font-family: 'Proxima Nova Extra Bold';
+    src: url(fonts/ProximaNova-Extrabld.woff) format('woff'),
+         url(fonts/ProximaNova-Extrabld.woff2) format('woff2'),
+         url(fonts/ProximaNova-Extrabld.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+
+}
+.logo {
+    font-family: 'Lulo Clean Outline';
+    font-size: 32px;
+    color: #CC7E9D;
+    margin: 0;
+}
+.media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CC7E9D;
+}
+.fa-brands {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #CC7E9D;
+}
+#comingsoon {
+    font-family: 'Proxima Nova Medium';
+    font-size: 24px;
+    color: #00416B;
+    margin: 20px 0 0;
+}
+.text-with-line {
+    position: relative;
+}
+
+.text-with-line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333; /* Adjust the color as needed */
+    position: absolute;
+    bottom: -10px; /* Adjust the distance from the text */
+    left: 0;
+}
+
+body {
+    margin: 0;
+    margin: 0;
+    background-image: url("images/YellowFlowers.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #00416B  ;
+    color: white;
+    padding: 10px 20px;
+}
+.nav-bar a {
+    text-decoration: none;
+}
+
+
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.center-rectangle {
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-rectangle {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-size: 14px;
+    color: gray;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  #00416B  ;
+    color: white;
+    padding: 10px 0;
+}
