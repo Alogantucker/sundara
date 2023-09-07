@@ -38,11 +38,17 @@ form.addEventListener('submit', async (event) => {
         });
 
         if (response.status === 200) {
-            // Success, handle accordingly
+            // Success, hide the form and show the "Thank you" message
+            form.style.display = 'none'; // Hide the form
+            document.querySelector('.thank-you-message').style.display = 'block'; // Show the "Thank you" message
             console.log('Email added to Google Sheet successfully');
         } else {
             // Handle error
             console.error('Error adding email to Google Sheet:', response.statusText);
+        }
+        if (response.result.error) {
+            // Handle error
+            console.error('Error adding email to Google Sheet:', response.result.error.message);
         }
     } catch (error) {
         console.error('Google Sheets API request error:', error);

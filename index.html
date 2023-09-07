@@ -36,10 +36,16 @@
     <section class="newsletter-section">
         <div class="newsletter-box">
             <p>Sign up for news and special offers.</p>
-            <form id="newsletter-form" method="post">
-                <input type="email" name="email" id="email-input" placeholder="Enter your email" required>
-                <button type="submit" id="subscribe-button">Subscribe</button>
-            </form>            
+           <!-- Add a <div> for the "Thank you" message -->
+<div class="thank-you-message" style="display: none;">
+    <p>Thank you for subscribing!</p>
+</div>
+
+<form id="newsletter-form" method="post">
+    <input type="email" name="email" id="email-input" placeholder="Enter your email" required>
+    <button type="submit" id="subscribe-button">Subscribe</button>
+</form> 
+                      
         </div>
     </section>
     
