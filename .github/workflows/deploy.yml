@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # Change this to the branch you want to trigger the deployment
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20.5.1 # Change this to your Node.js version if necessary
+
+      - name: Install dependencies
+        run: npm install
+
+      # - name: Build
+      #   run: npm run build # Replace with your build command if different
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # Change this to the branch where you want to deploy
+          FOLDER: build # Replace with the build folder in your project
